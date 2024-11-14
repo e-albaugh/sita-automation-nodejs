@@ -10,11 +10,11 @@ async function main() {
         console.log("Starting authentication...");
         const cookie = await authenticateAndGetSessionCookie();
         console.log("Received LWSSO_COOKIE_KEY:", cookie);
-        
+        /*
         console.log("Proceeding with SonarQube status check...");
         const sonarStatus = await checkSonarStatus();
         console.log("SonarQube Status:", sonarStatus);
-
+        */ 
         console.log("Initializing SonarQube Screenshot...");
         await takeScreenshot();
 
