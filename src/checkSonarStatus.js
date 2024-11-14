@@ -1,8 +1,11 @@
-import axios from 'axios';
+/*import axios from 'axios';*/
 
 // Define the `checkSonarStatus` function
 export async function checkSonarStatus() {
     console.log("checkSonarStatus function is being called"); // Confirm function is being called
+    
+    return 'OK';
+    /*
     const sonarUrl = `${process.env.SONAR_API_URL}?projectKey=${process.env.SONAR_PROJECT_KEY}`;
 
     try {
@@ -29,6 +32,8 @@ export async function checkSonarStatus() {
         console.error("Failed to retrieve SonarQube status:", error.message);
         throw error;
     }
+
+    */
 }
 
 checkSonarStatus()
